@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.player-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.now-playing {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.now-playing h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #a8c7ff;
+}
+
+#current-track {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.audio-controls {
+    margin: 2rem 0;
+}
+
+audio {
+    width: 100%;
+}
+
+/* Styling the audio player */
+audio::-webkit-media-controls-panel {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.playlist {
+    margin-top: 2rem;
+}
+
+.playlist h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #a8c7ff;
+}
+
+#track-list {
+    list-style: none;
+}
+
+#track-list li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#track-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+#track-list li.active {
+    background: rgba(168, 199, 255, 0.2);
+    border-left: 4px solid #a8c7ff;
+} 
