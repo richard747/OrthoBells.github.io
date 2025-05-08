@@ -5,8 +5,8 @@ const tracks = [
         file: "001.mp3"
     },
     {
-        title: "Sample Track 2",
-        file: "001.mp3"
+        title: "GladsomeLight",
+        file: "002.mp3"
     },
     {
         title: "Sample Track 3",
